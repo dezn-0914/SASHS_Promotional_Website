@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #e5dfea;
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #d6cffd;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    z-index: 11;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+}
+.school-logo {
+    background-color: #ad99ff;
+    border-radius: 100px;
+    box-shadow: 2px 2px 2px #666666;
+}
+ul .school {
+    position: absolute;
+    letter-spacing: 5px;
+    color: #5a4d4d;
+    text-shadow: 2px 2px 2px #bbbaba;
+    top: 20px;
+    left: 65px;
+}
+
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown-container img {
+    position: relative;
+    top: 2px;
+    right: 5px;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-content {
+    position: fixed;
+    right: -10px;
+    top: 0;
+    background-color: #ccc1fdce;
+    height: 100vh;
+    opacity: 0;
+    transform: translateX(20px);
+    transition:
+        opacity 0.5s ease,
+        transform 0.5s ease;
+    pointer-events: none;
+    display: inline-block;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.dropdown-content ul {
+    text-align: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-content li {
+    padding: 20px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 2px #1f1c1c;
+    margin-bottom: 30px;
+}
+
+.school-name {
+    position: relative;
+    font-family: "Verdana", serif;
+    font-weight: bold;
+    top: -20px;
+}
+
+.dropdown-content li a {
+    color: #ffffe0;
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+}
+
+.dropdown-content li a:hover {
+    color: #b2c4ff;
+    text-shadow: 2px 2px 2px #0a41ff;
+}
+
+.school-logo {
+    height: 45px;
+    width: 45px;
+}
+
+.scrolling-photo {
+    object-fit: cover;
+    width: 100%;
+    
+}
+
+.content-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #ffffe0;
+    background-color: #d4beeb;
+    box-shadow: 2px 2px 2px #4a4242;
+    border-radius: 5px;
+    padding: 20px 5px 50px;
+    width: 97%;
+    margin: 100px 0 0 0;
+}
+
+.content-box h3 {
+    display: inline-block;
+    position: relative;
+    top: -10px;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px #4a4242;
+    text-shadow: 2px 2px 2px #666666;
+    font-family: "Courier New";
+    font-weight: bold;
+    font-size: 25px;
+    background: #272795;
+    padding: 10px;
+    width: 200px;
+    z-index: 0;
+}
+
+.content-box p {
+    padding: 30px;
+    word-spacing: 2px;
+    line-height: 20px;
+    text-align: center;
+    hyphens: auto;
+    box-shadow: 2px 2px 2px #4a4242;
+    border-radius: 10px;
+    color: #ffffe0;
+    font-size: 15px;
+    text-shadow: 2px 3px 2px #1f1c1c;
+    background-color: #512fff6e;
+}
+
+.dropdown-container:hover .dropdown-content {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+    z-index: 10;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+    background-color: #d6cffd;
+    color: #5a4d4d;
+    width: 345;
+    position: relative;
+    bottom: 0;
+}
